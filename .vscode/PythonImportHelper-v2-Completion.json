@@ -1,0 +1,371 @@
+[
+    {
+        "label": "DirectoryLoader",
+        "importPath": "langchain_community.document_loaders",
+        "description": "langchain_community.document_loaders",
+        "isExtraImport": true,
+        "detail": "langchain_community.document_loaders",
+        "documentation": {}
+    },
+    {
+        "label": "PyPDFLoader",
+        "importPath": "langchain_community.document_loaders",
+        "description": "langchain_community.document_loaders",
+        "isExtraImport": true,
+        "detail": "langchain_community.document_loaders",
+        "documentation": {}
+    },
+    {
+        "label": "OpenAIEmbeddings",
+        "importPath": "langchain_openai",
+        "description": "langchain_openai",
+        "isExtraImport": true,
+        "detail": "langchain_openai",
+        "documentation": {}
+    },
+    {
+        "label": "RecursiveCharacterTextSplitter",
+        "importPath": "langchain.text_splitter",
+        "description": "langchain.text_splitter",
+        "isExtraImport": true,
+        "detail": "langchain.text_splitter",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "RetrievalQA",
+        "importPath": "langchain.chains",
+        "description": "langchain.chains",
+        "isExtraImport": true,
+        "detail": "langchain.chains",
+        "documentation": {}
+    },
+    {
+        "label": "PromptTemplate",
+        "importPath": "langchain.prompts",
+        "description": "langchain.prompts",
+        "isExtraImport": true,
+        "detail": "langchain.prompts",
+        "documentation": {}
+    },
+    {
+        "label": "CTransformers",
+        "importPath": "langchain_community.llms",
+        "description": "langchain_community.llms",
+        "isExtraImport": true,
+        "detail": "langchain_community.llms",
+        "documentation": {}
+    },
+    {
+        "label": "PineconeVectorStore",
+        "importPath": "langchain_pinecone",
+        "description": "langchain_pinecone",
+        "isExtraImport": true,
+        "detail": "langchain_pinecone",
+        "documentation": {}
+    },
+    {
+        "label": "PineconeVectorStore",
+        "importPath": "langchain_pinecone",
+        "description": "langchain_pinecone",
+        "isExtraImport": true,
+        "detail": "langchain_pinecone",
+        "documentation": {}
+    },
+    {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "render_template",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "jsonify",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "initialize_embeddings",
+        "importPath": "src.helper",
+        "description": "src.helper",
+        "isExtraImport": true,
+        "detail": "src.helper",
+        "documentation": {}
+    },
+    {
+        "label": "load_data",
+        "importPath": "src.helper",
+        "description": "src.helper",
+        "isExtraImport": true,
+        "detail": "src.helper",
+        "documentation": {}
+    },
+    {
+        "label": "creating_chunks",
+        "importPath": "src.helper",
+        "description": "src.helper",
+        "isExtraImport": true,
+        "detail": "src.helper",
+        "documentation": {}
+    },
+    {
+        "label": "initialize_embeddings",
+        "importPath": "src.helper",
+        "description": "src.helper",
+        "isExtraImport": true,
+        "detail": "src.helper",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "src.prompt",
+        "description": "src.prompt",
+        "isExtraImport": true,
+        "detail": "src.prompt",
+        "documentation": {}
+    },
+    {
+        "label": "Pinecone",
+        "importPath": "pinecone",
+        "description": "pinecone",
+        "isExtraImport": true,
+        "detail": "pinecone",
+        "documentation": {}
+    },
+    {
+        "label": "Pinecone",
+        "importPath": "pinecone",
+        "description": "pinecone",
+        "isExtraImport": true,
+        "detail": "pinecone",
+        "documentation": {}
+    },
+    {
+        "label": "ServerlessSpec",
+        "importPath": "pinecone",
+        "description": "pinecone",
+        "isExtraImport": true,
+        "detail": "pinecone",
+        "documentation": {}
+    },
+    {
+        "label": "find_packages",
+        "importPath": "setuptools",
+        "description": "setuptools",
+        "isExtraImport": true,
+        "detail": "setuptools",
+        "documentation": {}
+    },
+    {
+        "label": "setup",
+        "importPath": "setuptools",
+        "description": "setuptools",
+        "isExtraImport": true,
+        "detail": "setuptools",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "logging",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "logging",
+        "description": "logging",
+        "detail": "logging",
+        "documentation": {}
+    },
+    {
+        "label": "load_data",
+        "kind": 2,
+        "importPath": "src.helper",
+        "description": "src.helper",
+        "peekOfCode": "def load_data(data):\n    loader=DirectoryLoader(data,\n                           glob=\"*.pdf\",\n                           loader_cls=PyPDFLoader)\n    docs=loader.load()\n    return docs\ndef creating_chunks(extracted_data):\n    text_splitter=RecursiveCharacterTextSplitter(chunk_size=500,chunk_overlap=50)\n    text_chunks=text_splitter.split_documents(extracted_data)\n    return text_chunks",
+        "detail": "src.helper",
+        "documentation": {}
+    },
+    {
+        "label": "creating_chunks",
+        "kind": 2,
+        "importPath": "src.helper",
+        "description": "src.helper",
+        "peekOfCode": "def creating_chunks(extracted_data):\n    text_splitter=RecursiveCharacterTextSplitter(chunk_size=500,chunk_overlap=50)\n    text_chunks=text_splitter.split_documents(extracted_data)\n    return text_chunks\ndef initialize_embeddings():\n    load_dotenv()\n    embeddings=OpenAIEmbeddings(openai_api_key=os.environ[\"OPENAI_API_KEY\"])\n    return embeddings",
+        "detail": "src.helper",
+        "documentation": {}
+    },
+    {
+        "label": "initialize_embeddings",
+        "kind": 2,
+        "importPath": "src.helper",
+        "description": "src.helper",
+        "peekOfCode": "def initialize_embeddings():\n    load_dotenv()\n    embeddings=OpenAIEmbeddings(openai_api_key=os.environ[\"OPENAI_API_KEY\"])\n    return embeddings",
+        "detail": "src.helper",
+        "documentation": {}
+    },
+    {
+        "label": "index",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def index():\n    return render_template(\"chat.html\")\n@app.route(\"/chat\", methods=[\"POST\"])\ndef chat():\n    data = request.get_json()\n    user_message = data.get(\"message\", \"\")\n    if not user_message:\n        return jsonify({\"error\": \"No message provided\"}), 400\n    print(f\"User: {user_message}\")\n    result = qa_model.invoke({\"query\": user_message})",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "chat",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def chat():\n    data = request.get_json()\n    user_message = data.get(\"message\", \"\")\n    if not user_message:\n        return jsonify({\"error\": \"No message provided\"}), 400\n    print(f\"User: {user_message}\")\n    result = qa_model.invoke({\"query\": user_message})\n    bot_reply = result[\"result\"]\n    print(\"Bot:\", bot_reply)\n    return jsonify({\"reply\": bot_reply})",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "app = Flask(__name__)\n# Initialize embeddings\nembeddings = initialize_embeddings()\n# Pinecone setup\npc = Pinecone(api_key=os.environ[\"PINECONE_API_KEY\"])\nindex_name = \"llama2\"\ndocsearch = PineconeVectorStore.from_existing_index(\n    index_name=index_name,\n    embedding=embeddings\n)",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "embeddings",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "embeddings = initialize_embeddings()\n# Pinecone setup\npc = Pinecone(api_key=os.environ[\"PINECONE_API_KEY\"])\nindex_name = \"llama2\"\ndocsearch = PineconeVectorStore.from_existing_index(\n    index_name=index_name,\n    embedding=embeddings\n)\n# Prompt template\n# First stage",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "pc",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "pc = Pinecone(api_key=os.environ[\"PINECONE_API_KEY\"])\nindex_name = \"llama2\"\ndocsearch = PineconeVectorStore.from_existing_index(\n    index_name=index_name,\n    embedding=embeddings\n)\n# Prompt template\n# First stage\nMAP_PROMPT = PromptTemplate(\n    input_variables=[\"context\", \"question\"],",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "index_name",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "index_name = \"llama2\"\ndocsearch = PineconeVectorStore.from_existing_index(\n    index_name=index_name,\n    embedding=embeddings\n)\n# Prompt template\n# First stage\nMAP_PROMPT = PromptTemplate(\n    input_variables=[\"context\", \"question\"],\n    template=prompt_template",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "docsearch",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "docsearch = PineconeVectorStore.from_existing_index(\n    index_name=index_name,\n    embedding=embeddings\n)\n# Prompt template\n# First stage\nMAP_PROMPT = PromptTemplate(\n    input_variables=[\"context\", \"question\"],\n    template=prompt_template\n)",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "MAP_PROMPT",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "MAP_PROMPT = PromptTemplate(\n    input_variables=[\"context\", \"question\"],\n    template=prompt_template\n)\n# Second stage for map_reduce\nREDUCE_PROMPT = PromptTemplate(\n    input_variables=[\"summaries\", \"question\"],\n    template=\"Given the following summaries: {summaries}\\nAnswer the question: {question}\"\n)\nchain_type_kwargs = {",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "REDUCE_PROMPT",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "REDUCE_PROMPT = PromptTemplate(\n    input_variables=[\"summaries\", \"question\"],\n    template=\"Given the following summaries: {summaries}\\nAnswer the question: {question}\"\n)\nchain_type_kwargs = {\n    \"question_prompt\": MAP_PROMPT,\n    \"combine_prompt\": REDUCE_PROMPT\n}\n# Load local LLaMA 2 model\nllm = CTransformers(",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "chain_type_kwargs",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "chain_type_kwargs = {\n    \"question_prompt\": MAP_PROMPT,\n    \"combine_prompt\": REDUCE_PROMPT\n}\n# Load local LLaMA 2 model\nllm = CTransformers(\n    model=\"E:/GEN AI/End2End-Medical-Chatbot-using-Llama2/models/llama-2-7b-chat.ggmlv3.q4_0.bin\",\n    model_type=\"llama\",\n    max_new_tokens=128,\n    temperature=0.5",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "llm",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "llm = CTransformers(\n    model=\"E:/GEN AI/End2End-Medical-Chatbot-using-Llama2/models/llama-2-7b-chat.ggmlv3.q4_0.bin\",\n    model_type=\"llama\",\n    max_new_tokens=128,\n    temperature=0.5\n)\n# Create QA chain\nqa_model = RetrievalQA.from_chain_type(\n    llm=llm,\n    retriever=docsearch.as_retriever(search_kwargs={\"k\": 1}),",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "qa_model",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "qa_model = RetrievalQA.from_chain_type(\n    llm=llm,\n    retriever=docsearch.as_retriever(search_kwargs={\"k\": 1}),\n    return_source_documents=True,\n    chain_type_kwargs=chain_type_kwargs,\n    chain_type=\"map_reduce\"\n)\n@app.route(\"/\")\ndef index():\n    return render_template(\"chat.html\")",
+        "detail": "app",
+        "documentation": {}
+    }
+]

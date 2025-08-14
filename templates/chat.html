@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Medical Chatbot</title>
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(to right, #e0f2f1, #b2dfdb);
+        margin: 0;
+        padding: 0;
+    }
+
+    .chat-container {
+        max-width: 900px;
+        margin: 50px auto;
+        background: white;
+        border-radius: 15px;
+        box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .chat-header {
+        background: #009688;
+        color: white;
+        padding: 15px 20px;
+        font-size: 1.4em;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .chat-box {
+        padding: 20px;
+        height: 400px;
+        overflow-y: auto;
+        background-color: #f8f9fa;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .message {
+        display: flex;
+        align-items: flex-start;
+        max-width: 70%;
+        padding: 10px 15px;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        line-height: 1.5;
+        animation: fadeIn 0.3s ease-in-out;
+    }
+
+    .user-message {
+        background: #e1f5fe;
+        align-self: flex-end;
+        border-bottom-right-radius: 0;
+        flex-direction: row-reverse;
+    }
+
+    .bot-message {
+        background: #c8e6c9;
+        align-self: flex-start;
+        border-bottom-left-radius: 0;
+    }
+
+    .message img {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+
+    .user-message img {
+        margin-left: 10px;
+        margin-right: 0;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(5px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    .typing {
+        border-right: 2px solid #555;
+        animation: blink 1s step-end infinite;
+        white-space: pre-wrap;
+    }
+
+    @keyframes blink {
+        0%, 50%, 100% { border-color: transparent; }
+        25%, 75% { border-color: #555; }
+    }
+
+    .chat-input {
+        display: flex;
+        border-top: 1px solid #ddd;
+    }
+
+    .chat-input input {
+        flex: 1;
+        border: none;
+        padding: 15px;
+        font-size: 1em;
+        outline: none;
+    }
+
+    .chat-input button {
+        background: #009688;
+        color: white;
+        border: none;
+        padding: 0 25px;
+        font-size: 1em;
+        cursor: pointer;
+        transition: background 0.3s ease;
+    }
+
+    .chat-input button:hover {
+        background: #00796b;
+    }
+</style>
+</head>
+<body>
+
+<div class="chat-container">
+    <div class="chat-header">🩺 AI Medical Assistant</div>
+    <div id="chat-box" class="chat-box">
+        <div class="message bot-message">
+            <img src="{{ url_for('static', filename='bot.png') }}" alt="Bot Logo">
+            Hello! I’m your AI medical assistant. How can I help you today?
+        </div>
+    </div>
+
+    <form id="chat-form" class="chat-input" method="POST">
+        <input type="text" name="user_input" id="user-input" placeholder="Type your question..." required>
+        <button type="submit">Send</button>
+    </form>
+</div>
+
+<script>
+const chatBox = document.getElementById('chat-box');
+const form = document.getElementById('chat-form');
+const input = document.getElementById('user-input');
+
+form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const userMessage = input.value.trim();
+    if(!userMessage) return;
+
+    // Add user message
+    const userDiv = document.createElement('div');
+    userDiv.className = 'message user-message';
+    userDiv.innerHTML = `<img src="{{ url_for('static', filename='user.png') }}" alt="User Logo">${userMessage}`;
+    chatBox.appendChild(userDiv);
+    input.value = '';
+    chatBox.scrollTop = chatBox.scrollHeight;
+
+    // Add bot typing placeholder
+    const botDiv = document.createElement('div');
+    botDiv.className = 'message bot-message';
+    botDiv.innerHTML = `<img src="{{ url_for('static', filename='bot.png') }}" alt="Bot Logo"><span class="typing">Typing...</span>`;
+    chatBox.appendChild(botDiv);
+    chatBox.scrollTop = chatBox.scrollHeight;
+
+    try {
+        const response = await fetch('{{ url_for("chat") }}', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ message: userMessage })
+        });
+        const data = await response.json();
+        botDiv.innerHTML = `<img src="{{ url_for('static', filename='bot.png') }}" alt="Bot Logo">${data.reply}`;
+        chatBox.scrollTop = chatBox.scrollHeight;
+    } catch (err) {
+        botDiv.innerHTML = `<img src="{{ url_for('static', filename='bot.png') }}" alt="Bot Logo">Error!`;
+    }
+});
+</script>
+
+</body>
+</html>
