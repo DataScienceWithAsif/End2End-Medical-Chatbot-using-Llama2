@@ -68,7 +68,7 @@ def chat():
     data = request.get_json()
     user_message = data.get("message", "")
     if not user_message:
-        return jsonify({"error": "No message provided"}), 400
+        return jsonify({"error": "No message provided"})
     
     print(f"User: {user_message}")
     result = qa_model.invoke({"query": user_message})

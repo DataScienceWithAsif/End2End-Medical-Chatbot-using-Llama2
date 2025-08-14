@@ -265,7 +265,7 @@
         "kind": 2,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "def index():\n    return render_template(\"chat.html\")\n@app.route(\"/chat\", methods=[\"POST\"])\ndef chat():\n    data = request.get_json()\n    user_message = data.get(\"message\", \"\")\n    if not user_message:\n        return jsonify({\"error\": \"No message provided\"}), 400\n    print(f\"User: {user_message}\")\n    result = qa_model.invoke({\"query\": user_message})",
+        "peekOfCode": "def index():\n    return render_template(\"chat.html\")\n@app.route(\"/chat\", methods=[\"POST\"])\ndef chat():\n    data = request.get_json()\n    user_message = data.get(\"message\", \"\")\n    if not user_message:\n        return jsonify({\"error\": \"No message provided\"})\n    print(f\"User: {user_message}\")\n    result = qa_model.invoke({\"query\": user_message})",
         "detail": "app",
         "documentation": {}
     },
@@ -274,7 +274,7 @@
         "kind": 2,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "def chat():\n    data = request.get_json()\n    user_message = data.get(\"message\", \"\")\n    if not user_message:\n        return jsonify({\"error\": \"No message provided\"}), 400\n    print(f\"User: {user_message}\")\n    result = qa_model.invoke({\"query\": user_message})\n    bot_reply = result[\"result\"]\n    print(\"Bot:\", bot_reply)\n    return jsonify({\"reply\": bot_reply})",
+        "peekOfCode": "def chat():\n    data = request.get_json()\n    user_message = data.get(\"message\", \"\")\n    if not user_message:\n        return jsonify({\"error\": \"No message provided\"})\n    print(f\"User: {user_message}\")\n    result = qa_model.invoke({\"query\": user_message})\n    bot_reply = result[\"result\"]\n    print(\"Bot:\", bot_reply)\n    return jsonify({\"reply\": bot_reply})",
         "detail": "app",
         "documentation": {}
     },
